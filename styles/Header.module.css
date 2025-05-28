@@ -1,0 +1,48 @@
+.backgroundWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  mix-blend-mode: lighten;
+  z-index: -1; /* Уход в фон */
+}
+
+.backgroundImage {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1100px;
+  max-height: 700px;
+}
+
+main .header {  
+  height: 100vh;
+}
+
+main .content {
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  width:100%;
+  top: -5%;
+  left: 0;
+}
+
+main .content h1 {
+  border-bottom: solid 2px;
+  border-image: linear-gradient(
+      to right,
+      rgba(120, 120, 120, 1),
+      rgba(120, 120, 120, 0)
+    )
+    1;
+}
+
+main .content p {
+  max-width: 500px;
+  margin: 3% 0 10% 0;
+  list-style-type: none;
+}
+
+
+main .content ul li {
+  margin-bottom: 15px;
+}

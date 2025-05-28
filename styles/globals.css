@@ -1,0 +1,158 @@
+:root {
+  --background: #0a1318;
+  --foreground: #ffffff;
+  --deep-blue: #211c84;
+  --primary-blue: #3a3abf;
+  --soft-blue: #4d55cc;
+  --light-blue: #7a73d1;
+  --lavender: #b5a8d5;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  all: unset;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+button {
+  all: unset;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  border: var(--foreground) solid 2px;
+  border-radius: 50px;
+  padding: 15px 30px 15px 30px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+} 
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 15px 5% 10px 5%;
+  /*Glassmorphism*/
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  background-image: linear-gradient(
+    180deg,
+    rgba(10, 19, 24, 1),
+    rgba(10, 19, 24, 0.0001)
+  );
+  z-index: 10;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.d-flex,
+.d-flex :is(div, nav) {
+  display: flex;
+}
+
+.flex-between,
+.flex-between :is(div, nav) {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  padding: 0 5% 0 5%;
+}
+
+.logo {
+  max-width: 50%;
+  font-size: 2em;
+  user-select: none;
+  text-wrap: nowrap;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+}
+
+.logo img {
+  max-width: 40px;
+  margin-right: 8px;
+}
+
+.nav {
+  margin-left: 20px;
+}
+
+header nav a {
+  margin: 0 2vw 0 2vw;
+  font-size: 1em;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+header nav a:hover {
+  transform: scale(1.1);
+}
+
+header nav a:active {
+  color: var(--soft-blue);
+}
+
+.sign-up {  
+  padding: 8px 18px 8px 18px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.fill-button {
+  color: var(--background);
+  background-color: var(--foreground);
+  transition: all 0.2s ease-in-out;
+}
+
+.hollow-button {
+  color: var(--foreground);
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.hollow-button:hover, .fill-button:hover {
+  background-color: var(--soft-blue);
+  border-color: var(--soft-blue);
+  color: var(--foreground);
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  header {    
+    -webkit-backdrop-filter: blur(20px); /* Safari */
+  }
+}
