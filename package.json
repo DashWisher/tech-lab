@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "eslint app components --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint app components --ext js,jsx,ts,tsx --fix",
-    "format": "prettier --write 'app/**/*.{js,jsx,ts,tsx,css,html}' 'components/**/*.{js,jsx,ts,tsx,css,html}'"
-
+    "format": "prettier --write 'app/**/*.{js,jsx,ts,tsx,css,html}' 'components/**/*.{js,jsx,ts,tsx,css,html}'",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "15.3.2",
