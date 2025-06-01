@@ -6,9 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint . --ext js,jsx --fix",
-    "format": "prettier --write './**/*.{js,jsx,css,html}'"
+    "lint": "eslint app components --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint app components --ext js,jsx,ts,tsx --fix",
+    "format": "prettier --write 'app/**/*.{js,jsx,ts,tsx,css,html}' 'components/**/*.{js,jsx,ts,tsx,css,html}'"
+
   },
   "dependencies": {
     "next": "15.3.2",
@@ -32,7 +33,7 @@
     }
   },
   "lint-staged": {
-    "./**/*.{js,jsx}": [
+    "./**/*.{ts,tsx,js,jsx}": [
       "npm run lint",
       "npm run format"
     ]
