@@ -1,7 +1,3 @@
 export default function Footer() {
-    return (
-        <header>
-            
-        </header>
-    );
+  return <header></header>;
 }

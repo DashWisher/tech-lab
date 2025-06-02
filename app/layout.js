@@ -29,8 +29,8 @@ export default function RootLayout({ children }) {
 
 //import Header from "@components/Footer";
 //import Footer from "@components/Header";
-import Head from "next/head";
-import "../styles/globals.css";
+import Head from 'next/head';
+import '../styles/globals.css';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({
@@ -39,14 +39,14 @@ const montserrat = Montserrat({
   display: 'swap', // Rendering optimization
 });
 
-import Nav from "../components/Nav";
+import Nav from '../components/Nav';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={montserrat.className}>
       <Head>
         <title>TachLab</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
@@ -54,5 +54,5 @@ export default function RootLayout({ children }) {
         {children}
       </body>
     </html>
-  )
+  );
 }

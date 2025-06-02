@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Activity from "../components/Activity";
+import Header from '../components/Header';
+import Activity from '../components/Activity';
 
 export default function Home() {
   return (

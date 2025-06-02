@@ -1,0 +1,31 @@
+name: Continuous Integration
+
+# this is a trigger CI on push and PR for main branch only
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        with: 
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run lint
+        run: npm run lint
+      
+      - name: Run format check
+        run: npm run format
