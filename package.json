@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "server": "node ./backend/server.js",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint app components --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint app components --ext js,jsx,ts,tsx --fix",
-    "format": "prettier --write 'app/**/*.{js,jsx,ts,tsx,css,html}' 'components/**/*.{js,jsx,ts,tsx,css,html}'",
+    "lint": "eslint app components backend --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint app components backend --ext js,jsx,ts,tsx --fix",
+    "format": "prettier --write 'app/**/*.{js,jsx,ts,tsx,css,html}' 'components/**/*.{js,jsx,ts,tsx,css,html}' 'backend/**/*.{js,jsx,ts,tsx,css,html}'",
     "prepare": "husky"
   },
   "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.14.1",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
