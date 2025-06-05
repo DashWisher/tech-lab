@@ -157,3 +157,114 @@ header nav a:active {
     -webkit-backdrop-filter: blur(20px); /* Safari */
   }
 }
+
+/*---------------------------footer----------------------------*/
+
+footer {
+  height: 540px;
+}
+
+.topFooter {
+  width: 80%;
+  margin: 10% 0 5% 0;
+  align-items: flex-start !important;
+}
+
+footer .content {
+  min-width: 200px;
+  align-items: flex-start !important;
+}
+
+footer .content span {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+footer .content a {
+  margin-top: 20px;
+}
+
+footer a {
+  transition: all 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: var(--light-blue);
+}
+
+footer a:active {
+  color: var(--soft-blue);
+}
+
+.bottomFooter {
+  width: inherit;
+  padding: 5% 10% 5% 10%;
+  border-top: 1px solid;
+  border-image: linear-gradient(
+      to right,
+      var(--background),
+      var(--foreground),
+      var(--background)
+    )
+    1;
+}
+
+footer .privacy {
+  margin-right: 20px;
+}
+
+footer .privacy a {
+  margin: 0 10px 0 10px;
+}
+
+.youtube,
+.instagram,
+.twitter,
+.linkedin {
+  width: 30px;
+  height: 30px;
+  background-color: var(--foreground);
+  margin: 0 10px 0 10px;
+}
+
+.youtube {
+  mask-image: url("/icons/youtube.svg");
+}
+
+.youtube:hover {
+  background-color: #ff0033;
+}
+
+.instagram {
+  position: relative;
+  mask-image: url("/icons/instagram.svg"); 
+  background: linear-gradient(150deg, #7c38f9, #ba0aeb, #fd600d, #ff0b6c);
+}
+
+.instagram::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(150deg, #fff, #fff, #fff, #fff);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.instagram:hover::after {
+  opacity: 0;
+}
+
+.twitter {
+  mask-image: url("/icons/twitter.svg");
+}
+
+.twitter:hover {
+  background-color: #08a5f5;
+}
+
+.linkedin {
+  mask-image: url("/icons/linkedin.svg");
+}
+
+.linkedin:hover {
+  background-color: #0882bd;
+}

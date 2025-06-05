@@ -9,6 +9,7 @@ const montserrat = Montserrat({
 });
 
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 export default function RootLayout({ children }) {
   return (
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
