@@ -1,0 +1,42 @@
+{
+  "cards": [
+    {
+      "image": "/courses/image1.jpg",
+      "alt": "AI-img",
+      "title": "Artificial intelligence",
+      "description": "Our innovations enhance adaptability, predictive accuracy, and real-world applications across industries."
+    },
+    {
+      "image": "/courses/image2.jpg",
+      "alt": "AI-img",
+      "title": "Artificial intelligence",
+      "description": "Our innovations enhance adaptability, predictive accuracy, and real-world applications across industries."
+    },
+    {
+      "image": "/courses/image3.jpg",
+      "alt": "AI-img",
+      "title": "Artificial intelligence",
+      "description": "Our innovations enhance adaptability, predictive accuracy, and real-world applications across industries."
+    },
+    {
+      "image": "/courses/image4.jpg",
+      "alt": "AI-img",
+      "title": "Artificial intelligence",
+      "description": "Our innovations enhance adaptability, predictive accuracy, and real-world applications across industries."
+    },
+    {
+      "image": "/courses/image5.jpg",
+      "alt": "AI-img",
+      "title": "Artificial intelligence",
+      "description": "Our innovations enhance adaptability, predictive accuracy, and real-world applications across industries."
+    },
+    {
+      "image": "/courses/image6.jpg",
+      "alt": "AI-img",
+      "title": "Artificial intelligence",
+      "description": "Our innovations enhance adaptability, predictive accuracy, and real-world applications across industries."
+    }
+  ],
+  "quantity": "6",
+  "time": "20s"
+}

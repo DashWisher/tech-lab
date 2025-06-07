@@ -19,13 +19,13 @@ export default function Activity() {
     fetch('/activity.json') // Загружаем JSON-файл из public
       .then((res) => res.json())
       .then((data) => setActivityData(data.activities))
-      .catch((err) => console.error('Loading error:', err));
+      .catch((err) => console.error('JSON Loading error:', err));
   }, []);
 
   return (
     <>
       <div className="container">
-        <h1 className={styles.header}>Activity</h1>
+        <h1>Activity</h1>
         <Swiper
           cssMode={true}
           navigation={true}
@@ -43,8 +43,8 @@ export default function Activity() {
                     <Image
                       src={activity.image}
                       alt={activity.alt || 'Activity'}
-                      width={500}
-                      height={300}
+                      width={960}
+                      height={1568}
                       className={styles.image}
                     />
                   </div>
