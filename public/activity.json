@@ -1,0 +1,73 @@
+{
+  "activities": [
+    {
+      "image": "/activity1/image.jpg",
+      "alt": "AI-img",
+      "title": "Artificial intelligence",
+      "description": "Our innovations enhance adaptability, predictive accuracy, and real-world applications across industries.",
+      "info": [
+        [
+          "/activity1/icon1.png",
+          "New algorithm",
+          "We enhanced AI efficiency with adaptive, precise data-driven computation."
+        ],
+        [
+          "/activity1/icon2.png",
+          "Data security",
+          "We strengthened encryption, safeguarding AI communications from cyber threats."
+        ],
+        [
+          "/activity1/icon3.png",
+          "Dialogue analysis",
+          "We advanced AI comprehension, improving contextual responses and user interactions."
+        ]
+      ]
+    },
+    {
+      "image": "/activity2/image.jpg",
+      "alt": "AI-img",
+      "title": "AI Server Solutions",
+      "description": "Our advancements optimize server efficiency, enhance predictive analytics, and improve AI-driven workload management across infrastructures.",
+      "info": [
+        [
+          "/activity2/icon1.png",
+          "Automated allocation",
+          "Optimized AI-driven workload distribution for server efficiency and resource management"
+        ],
+        [
+          "/activity2/icon2.png",
+          "Secure Encryption",
+          "Enhanced encryption protocols ensuring robust data protection across server infrastructures."
+        ],
+        [
+          "/activity2/icon3.png",
+          "AI Diagnostics",
+          "Advanced AI-powered log parsing for real-time server diagnostics and insights."
+        ]
+      ]
+    },
+    {
+      "image": "/activity3/image.jpg",
+      "alt": "AI-img",
+      "title": "Courses",
+      "description": "We launched AI courses with certification, teamwork-based projects, and 100+ educational videos, empowering learners with practical skills and industry expertise.",
+      "info": [
+        [
+          "/activity3/icon1.png",
+          "Certification",
+          "Graduates receive official certificates, validating their expertise in AI and robotics technologies."
+        ],
+        [
+          "/activity3/icon2.png",
+          "Teamwork",
+          "Collaborative projects enhance the learning process through team-based solutions."
+        ],
+        [
+          "/activity3/icon3.png",
+          "100+ videos",
+          "We provide extensive educational content that provides a deep understanding of AI and robotics."
+        ]
+      ]
+    }
+  ]
+}
