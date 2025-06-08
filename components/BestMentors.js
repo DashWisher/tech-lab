@@ -17,7 +17,7 @@ export default function BestMentors() {
   return (
     <>
       <div className="container">
-        <h1>Best mentors</h1>
+        <h2>Best mentors</h2>
         <div className={`${styles.cards} d-flex flex-between`}>
           <div className={styles.card}>
             <div className={`${styles.content} f-col`}>

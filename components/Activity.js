@@ -25,7 +25,7 @@ export default function Activity() {
   return (
     <>
       <div className="container">
-        <h1>Activity</h1>
+        <h2>Activity</h2>
         <Swiper
           cssMode={true}
           navigation={true}

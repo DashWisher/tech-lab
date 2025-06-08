@@ -1,7 +1,7 @@
 .slider {
   width: 100%;
   min-height: 650px;
-  margin-top: 40px;
+  margin-top: 50px;
   overflow: hidden;
   mask-image: linear-gradient(
     to right,
