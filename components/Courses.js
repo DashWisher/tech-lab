@@ -8,7 +8,7 @@ export default function Courses() {
   const [data, setData] = useState({ cards: [] });
 
   useEffect(() => {
-    fetch('/Courses.json')
+    fetch('/courses.json')
       .then((res) => res.json())
       .then((jsonData) => setData(jsonData))
       .catch((err) => console.error('Loading error :', err));
