@@ -1,0 +1,13 @@
+{
+  "cards": [
+    {
+      "image": "/courses/image1.jpg",
+      "alt": "AI-img",
+      "name": "",
+      "experience": "Artificial intelligence",
+      "rating": "",
+      "tags": []
+    }
+  ],
+  "quantity": "1"
+}

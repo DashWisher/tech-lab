@@ -14,23 +14,30 @@ a {
   cursor: pointer;
 }
 
+h1,h2,h3,h4,h5 {
+  all: unset;
+}
+
 h1,
 h2 {
-  all: unset;
   font-size: 3em;
   font-weight: 700;
 }
 
 h3 {
-  all: unset;
   font-size: 1.5em;
   font-weight: 700;
 }
 
 h4 {
-  all: unset;
   font-size: 1.5em;
   font-weight: 500;
+  line-height: 2; 
+}
+
+h5 {
+  font-size: 1.3em;
+  font-weight: 400;
   line-height: 2; 
 }
 
@@ -105,9 +112,10 @@ header {
 }
 
 .container {
+  width: 100%;
   position: relative;
   padding: 0 5% 0 5%;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .logo {

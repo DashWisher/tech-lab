@@ -1,0 +1,61 @@
+.cards {
+  width: 100%;
+  height: 600px;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.card {
+  width: 500px;
+  max-width: 500px;
+  min-width: 500px;
+  background-color: var(--card);
+  border-radius: 50px;
+  margin: 0 10px 0 10px;
+}
+
+.content {
+  width: inherit;
+  align-self: flex-start;
+  padding: 10%;
+}
+
+.content > div {
+  width: 100%;
+}
+
+.content h4,
+.tags {
+  align-self: flex-start;
+}
+
+.tags {
+  --lavender: rgba(181, 168, 213, 0.65);
+  position: relative;
+  justify-content: flex-start !important;
+  margin-top: 20px;
+  max-height: 78px;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+}
+
+/*.tags::after {
+  content: "+3";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--lavender);
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50px;
+  margin: 0 0 10px 0;
+}
+*/
+.tag {
+  background-color: var(--lavender); /*--lavender*/
+  padding: 5px 10px 5px 10px;
+  margin: 0 10px 10px 0;
+
+  border-radius: 50px;
+  white-space: nowrap;
+}
